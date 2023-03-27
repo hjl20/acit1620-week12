@@ -6,7 +6,7 @@ const alertUser = () => {
     // clickMeBtn.removeEventListener("click", alertUser)
 }
 
-clickMeBtn.addEventListener("click", alertUser, {once: true})
+// clickMeBtn.addEventListener("click", alertUser, {once: true})
 
 
 const pinkBackground = () => {
@@ -24,3 +24,11 @@ const clickedText = () => {
 
 clickMeBtn.addEventListener("click", pinkBackground)
 clickMeBtn.addEventListener("click", clickedText)
+
+clickMeBtn.addEventListener("click", () => {
+    img = document.querySelector("#shoppingCart")
+    img.setAttribute("src", "images/shoppingCart.png")
+    img.setAttribute("alt", "shopping cart")
+    img.setAttribute("width", 150)
+    img.setAttribute("height", 150)
+})
