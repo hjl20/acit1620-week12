@@ -1,9 +1,9 @@
 
+clickMeBtn = document.querySelector("#clickMe")
 
 const alertUser = () => {
     alert("You clicked!")
+    clickMeBtn.removeEventListener("click", alertUser)
 }
-
-clickMeBtn = document.querySelector("#clickMe")
 
 clickMeBtn.addEventListener("click", alertUser)
